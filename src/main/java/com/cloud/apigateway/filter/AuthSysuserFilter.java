@@ -61,7 +61,7 @@ public class AuthSysuserFilter extends ZuulFilter {
                 || request.getRequestURI().contains("/account/")
                 || request.getRequestURI().contains("/hc/")
                 ) {
-            return false;
+            return true;
         }
 
         return false;
